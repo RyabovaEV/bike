@@ -1,0 +1,22 @@
+.footerContent
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__left,
+  &__right,
+  &__middle
+    flex: 1 1 33.33%
+  &__left
+    @include breakpoint($mobile-bp)
+      margin-bottom: 3rem
+  &__middle
+    display: flex
+    justify-content: center
+    @include breakpoint($mobile-bp)
+      margin-bottom: 3rem
+  &__right
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    & img
+      margin-left: .9rem

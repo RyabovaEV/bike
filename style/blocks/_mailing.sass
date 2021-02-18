@@ -1,0 +1,21 @@
+.mailing
+  padding: 7% 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @include breakpoint($tablet-bp)
+    padding: 5%
+  &__logo
+    margin-bottom: 3.1rem
+    @include breakpoint($tablet-bp)
+      margin-bottom: 1.5rem
+  &__text
+    margin-bottom: 3.4rem
+    color: $colorText
+    font-size: 2.4rem
+    font-style: italic
+    line-height: 3.4rem
+    @include breakpoint($tablet-bp)
+      margin-bottom: 1.5rem
+      font-size: 2rem

@@ -1,0 +1,19 @@
+.twitter
+  padding: 5% 15% 3%
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #f7f7f7
+  @include breakpoint($tablet-bp)
+    padding: 3% 7.5% 3%
+  &__line
+    display: flex
+  &__content
+    min-height: 30rem
+    max-height: 30rem
+    flex: 1 1 auto
+    overflow: hidden
+    @include breakpoint($tablet-bp)
+      min-height: 25rem
+  &__slider
+    flex: 0 0 3%

@@ -1,0 +1,26 @@
+.retrobike
+  display: flex
+  //flex-wrap: wrap
+  &__left
+    flex: 1 1 33.33%
+    position: relative
+  &__logo
+    @extend %logoBike
+  &__middle
+    flex: 1 1 33.33%
+    display: flex
+    flex-direction: column
+  &__discription
+    @extend %discriptionText
+    @include breakpoint($tablet-bp)
+      padding: 5%
+  &__img
+    @extend %img
+    overflow: hidden
+    z-index: 1
+    &-discription
+      flex: 1 1 30%
+  &__right
+    flex: 1 1 33.33%
+    @include breakpoint($tablet-bp)
+    display: none

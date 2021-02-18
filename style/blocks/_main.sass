@@ -1,0 +1,29 @@
+.main
+  flex: 1 1 auto
+  text-align: center
+  &__icon
+    width: 5%
+    &-bike
+      width: 10%
+      text-align: center
+      @include breakpoint($tablet-bp)
+        width: 5%
+    & img
+      width: 100%
+      height: auto
+      object-fit: cover
+  &__title
+    color: $colorTitle
+    font-size: 1.8rem
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.2rem
+    line-height: 2.1rem
+  &__text
+    font-size: 1.8rem
+    color: $colorText
+    line-height: 3.4rem
+    position: relative
+    &-smoll
+      font-size: 1.6rem
+      line-height: 3rem

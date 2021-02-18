@@ -1,0 +1,47 @@
+.photos
+  display: flex
+  &__left
+    flex: 1 1 33.33%
+  &__middle
+    flex: 1 1 33.33%
+    display: flex
+  &__right
+    flex: 1 1 33.33%
+  &__link
+    display: block
+    width: 100%
+    overflow: hidden
+    position: relative
+    z-index: 2
+    &-rollOver
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 10
+      background: rgba(#64C29E, .8) url(../img/icon/icon__.svg) 50% 50% no-repeat
+      opacity: 0
+      transition: opacity .2s linear
+    &:hover,
+    &:active
+      .photos__link-rollOver
+        opacity: 1
+
+.photosLeft
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  &__top
+    display: flex
+  &__bottom
+    flex: 1 0 50%
+
+.photosRight
+  display: flex
+  flex-direction: column
+  &__top
+    flex: 1 1 50%
+  &__bottom
+    display: flex

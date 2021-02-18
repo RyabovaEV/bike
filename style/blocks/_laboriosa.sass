@@ -1,0 +1,27 @@
+.laboriosa
+  display: flex
+  flex-wrap: wrap
+  @include breakpoint($tablet-bp)
+    flex-direction: column
+  &__left
+    flex: 1 1 33.33%
+    display: flex
+    flex-direction: column
+    @include breakpoint($tablet-bp)
+      order: 2
+  &__discription
+    @extend %discriptionText
+    @include breakpoint($tablet-bp)
+      padding: 5%
+  &__img
+    flex: 1 1 30%
+    @extend %img
+    overflow: hidden
+    z-index: 1
+  &__right
+    flex: 1 1 66.66%
+    position: relative
+    @include breakpoint($tablet-bp)
+      order: 1
+  &__logo
+    @extend %logoBike

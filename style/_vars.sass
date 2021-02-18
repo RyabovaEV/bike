@@ -1,0 +1,66 @@
+$colorTitle: #353738
+$colorText: #848789
+
+$z-index-header: 10
+$z-index-mask: 15
+$z-index-menu: 20
+$z-index-sticky: 25
+$z-index-logo: 30
+
+$tablet-bp: 1100px
+$mobile-bp: 767px
+
+%img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+%logoBike
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 2
+  transform: translateX(-50%) translateY(-50%)
+
+%discriptionText
+  padding: 15%
+  flex: 1 1 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #fff
+  position: relative
+  &::before
+    content: ""
+    width: 5rem
+    height: 0.1rem
+    background-color: rgba(#353738, .2)
+    position: absolute
+    left: 50%
+    bottom: 8%
+    transform: translateX(-50%)
+  &::after
+    content: ""
+    width: 20px
+    height: 20px
+    background-color: #ffffff
+    position: absolute
+    left: 50%
+    bottom: -10px
+    z-index: 2
+    transform: translateX(-50%) rotate(45deg)
+
+%rollOver
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  background: rgba(#64C29E, .8) url(../img/icon/icon__.svg) 50% 50% no-repeat
+  opacity: 0
+  transition: opacity .2s linear
+  &:hover,
+  &:active
+    .photos__link-rollOver
+      opacity: 1

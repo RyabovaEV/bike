@@ -1,0 +1,31 @@
+.oliva
+  //min-width: 100%
+  display: flex
+  flex-wrap: wrap
+  @include breakpoint($tablet-bp)
+    flex-direction: column
+  &__right
+    flex: 1 1 66.66%
+    position: relative
+    @include breakpoint($tablet-bp)
+      flex: 1 1 100%
+  &__img
+    display: block
+    @extend %img
+  &__logo
+    @extend %logoBike
+  &__left
+    flex: 1 1 33.33%
+    display: flex
+    flex-direction: column
+    @include breakpoint($tablet-bp)
+      flex: 1 1 100%
+  &__discription
+    @extend %discriptionText
+    @include breakpoint($tablet-bp)
+      padding: 5%
+  &__img
+    flex: 1 1 30%
+    @extend %img
+    overflow: hidden
+    z-index: 1

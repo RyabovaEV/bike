@@ -1,0 +1,19 @@
+.headerRow
+  width: 100%
+  height: 8.5rem
+  $z-index-mask: 15
+  transition: all 1s easy
+  &.sticky
+    position: fixed
+    top: 0
+    background-color: #282F35
+    box-shadow: 0 7px 10px rgba(#282F35, .2)
+  &__logo
+    height: 8.5rem
+    padding: 1rem 0
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: $z-index-logo
+    overflow: auto
